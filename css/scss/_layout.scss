@@ -1,0 +1,38 @@
+/* Layout rules: smacss.com/book/type-layout */
+table{
+	width: 90%;
+	margin: 0 auto;
+
+	thead tr{
+		display: none;
+	}
+}
+td{
+	height: 44px;
+	box-sizing: border-box;
+	float: left;
+	&.type, &.start, &.duration, &.cost{
+		text-align: center;
+		width: 25%;
+	}
+	&.cost:after{
+		content: '⇲';
+		color: blue;
+		text-decoration: underline;
+		position: relative;
+		left: 10px;
+	}
+
+	&.stop, &.recipient, &.rate{
+		width: 100%;
+	}
+	&.stop:before{
+		content: 'Eindtijd: ';
+	}
+	&.recipient:before{
+		content: 'Naar: ';
+	}
+	&.rate:before{
+		content: 'Tarief: ';
+	}
+}

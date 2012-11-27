@@ -1,0 +1,6 @@
+/* Module rules: smacss.com/book/type-module */
+table td{
+	&.type, &.start, &.duration, &.cost{
+		cursor: pointer;
+	}
+}

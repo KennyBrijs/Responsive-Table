@@ -1,0 +1,30 @@
+/* 768px and up rules */
+// Base rules
+// Layout rules
+table.historiek{
+	thead tr{
+		display: table-row;
+	}
+	td{
+		float: none;
+		width: 14.285714286%;
+
+		&:before{
+			content: '';
+		}
+		&:after{
+			content: '';
+		}
+
+		&.is-hidden{
+			display: table-cell;
+		}
+
+		&.type, &.start, &.duration, &.cost{
+			cursor: inherit;
+		}
+	}
+}
+// Module rules
+// State rules
+// Theme rules
