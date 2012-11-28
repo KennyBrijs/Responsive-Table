@@ -314,7 +314,7 @@ table td.type, table td.start, table td.duration, table td.cost {
   cursor: pointer; }
 
 /* State rules: smacss.com/book/type-state */
-td.is-hidden {
+.is-hidden {
   display: none; }
 
 /* Theme rules: smacss.com/book/type-theme */
