@@ -5,6 +5,8 @@ Tables on mobile are, well… a female dog. Some people pointed out some thought
 - On small screens: show only most important data in every row. If user taps the row (design it so that it's clear to the user that the row can be expanded), the extra data shows, you can explain each field’s meaning using CSS `:before{ content: 'header text';}`
 - Show all data on larger screens
 
+[Go check out the demo!](http://kennybrijs.net/demos/responsive-table/)
+
 Here’s how it works:
 
 
