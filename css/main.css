@@ -298,8 +298,7 @@ td {
     content: '⇲';
     color: blue;
     text-decoration: underline;
-    position: relative;
-    left: 10px; }
+    margin-left: 10px; }
   td.stop, td.recipient, td.rate {
     width: 100%; }
   td.stop:before {

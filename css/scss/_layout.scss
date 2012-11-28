@@ -19,8 +19,7 @@ td{
 		content: '⇲';
 		color: blue;
 		text-decoration: underline;
-		position: relative;
-		left: 10px;
+		margin-left: 10px;
 	}
 
 	&.stop, &.recipient, &.rate{
