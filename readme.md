@@ -16,6 +16,8 @@ Just a regular table, add semantic classes to the cells (`<td>`) so you can poin
 
 Also, add row number classes to the rows, so you can tell JavaScript to only show/hide extra data from the row that is tapped.
 
+[Checken sie der HTML](https://github.com/KennyBrijs/Responsive-Table/blob/master/index.html)
+
 
 ## JavaScript
 
@@ -23,13 +25,15 @@ Add classes to less important cells to hide them (`.is-hidden` is [the SMACSS wa
 
 Add a clickhandler to crucial cells which toggles the `.is-hidden` class.
 
+[Check the Javascript code](https://github.com/KennyBrijs/Responsive-Table/blob/master/js/main.js), or [check the CoffeeScript code](https://github.com/KennyBrijs/Responsive-Table/blob/master/js/coffee/main.coffee)
+
 
 ## CSS
 
-Table cells are floated, so the less important cells kan be displayed *underneath* the crucial cells on smaller screens.
+Table cells are floated, so the less important cells kan be displayed *underneath* the crucial cells on smaller screens. [Check the _layout sass file](https://github.com/KennyBrijs/Responsive-Table/blob/master/css/scss/_layout.scss)
 
-`.is-hidden` is of course set to `display: none;`
+`.is-hidden` is of course set to `display: none;` [Check the _states sass file](https://github.com/KennyBrijs/Responsive-Table/blob/master/css/scss/_states.scss)
 
-On large enough screens (in a media query), hiding less important fields is ignored by resetting the styles for the `.is-hidden` class to `display: table-cell` (e.g. `table.responsive td.is-hidden{ display: table-cell; }`)
+On large enough screens (in a media query), hiding less important fields is ignored by resetting the styles for the `.is-hidden` class to `display: table-cell` (e.g. `table.responsive td.is-hidden{ display: table-cell; }`) [Check the mediaquery file for large screens](https://github.com/KennyBrijs/Responsive-Table/blob/master/css/scss/_768.scss)
 
 Explain the meaning of the extra fields with CSS `:before` and `content: ''` (e.g. `td.cellname:before { content: 'header text'; }`)
